@@ -1,0 +1,13 @@
+.db-header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    padding: 12px 26px;
+    background: #fff;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.db-header .logo {
+    width: 100px;
+}

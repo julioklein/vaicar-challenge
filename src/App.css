@@ -1,0 +1,15 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* html, body, #root {
+  height: 100%;
+} */
+
+@media (min-width: 600px) {
+  
+  .App {
+      height: 100%;
+  }
+  
+}

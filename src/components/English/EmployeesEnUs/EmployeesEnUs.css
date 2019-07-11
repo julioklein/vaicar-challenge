@@ -1,0 +1,25 @@
+.div-employees-en {
+    padding: 40px 26px;
+}
+
+.div-employees-en li {
+    list-style: none;
+    margin: 10px 10px;
+}
+
+.div-employees-en li button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #02bfa4;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.div-employees-en li button:hover {
+    background: #02bfa4;
+    color: #fff;
+}

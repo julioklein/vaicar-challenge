@@ -1,0 +1,73 @@
+.edit-en {
+    padding: 20px 0px;
+}
+
+.edit-en div {
+    margin: 6px 0px;
+}
+
+.edit-en img {
+    border-radius: 50%;
+    padding: 0px 6px;
+}
+
+.edit-en label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.edit-en input {
+    width: 100%;
+    padding-left: 6px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.edit-en input:focus {
+    border-bottom: 1px solid #02bfa4;
+    outline: none;
+}
+
+.edit-en #female, .edit-en #male {
+    width: 20px;
+}
+
+.edit-en button {
+    background: #fff;
+    border-radius: 28px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.edit-button-save-en {
+    border: 1px solid #02bfa4;
+}
+
+.edit-button-save-en:hover {
+    background: #02bfa4;
+    color: #fff;
+    font-weight: 600;
+}
+
+.edit-button-save-en:focus {
+    outline: none;
+}
+
+.edit-button-cancel-en {
+    border: 1px solid #000;
+}
+
+.edit-button-cancel-en:hover {
+    background: #000;
+    color: #fff;
+
+}
+
+.edit-button-cancel-en:focus {
+    outline: none;
+}

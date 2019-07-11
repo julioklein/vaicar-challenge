@@ -1,0 +1,15 @@
+.auth-header-en {
+    padding: 16px 20px;
+    height: auto;
+    background: #fff;
+}
+
+.auth-header-en img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.auth-header-en .logo-en {
+    width: 32px;
+    cursor: pointer;
+}

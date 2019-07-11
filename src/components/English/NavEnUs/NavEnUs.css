@@ -1,0 +1,67 @@
+.nav-en {
+    text-transform: uppercase;
+}
+
+.nav-en a {
+    text-decoration: none;
+}
+
+.nav-button-en {
+    border: none;
+    background: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.nav-button-en:focus {
+    outline: none;
+}
+
+.nav-span-en {
+    display: flex;
+}
+
+.nav-span-en div {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.nav-icon-en {
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+    object-fit: contain;
+}
+
+.menu-lang-en {
+    top: 70px;
+    right: 150px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,.12);
+}
+
+.login-button-en {
+    min-height: 40px;
+    min-width: 132px;
+    padding: 0px 16px;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-button-en:hover {
+    background: #000;
+    color: #fff;
+}
+
+.login-button-en:focus {
+    outline: none;
+}

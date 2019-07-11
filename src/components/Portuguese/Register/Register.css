@@ -1,0 +1,72 @@
+.register {
+    padding: 20px 0px;
+}
+
+.register div {
+    margin: 6px 0px;
+}
+
+.register label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.register input {
+    width: 100%;
+    padding-left: 6px;
+    margin: 6px 0px;
+    border: none;
+    border-bottom: 1px solid #9a9a9a;
+}
+
+.register a {
+    text-decoration: none;
+}
+
+.register input:focus {
+    border-bottom: 1px solid #02bfa4;
+    outline: none;
+}
+
+.register #female, .register #male {
+    width: 20px;
+}
+
+.register button {
+    background: #fff;
+    border-radius: 28px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.register-button-save {
+    border: 1px solid #02bfa4;
+}
+
+.register-button-save:hover {
+    background: #02bfa4;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-button-save:focus {
+    outline: none;
+}
+
+.register-button-cancel {
+    border: 1px solid #000;
+}
+
+.register-button-cancel:hover {
+    background: #000;
+    color: #fff;
+
+}
+
+.register-button-cancel:focus {
+    outline: none;
+}

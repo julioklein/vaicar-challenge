@@ -1,0 +1,66 @@
+.top-content-en {
+    padding-top: 70px;
+    padding-left: 26px;
+    background: #fff;
+}
+
+.top-content-en h1 {
+    padding: 40px 12px 0px 12px;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.top-content-en h2 {
+    padding: 0px 12px 20px 12px;
+}
+
+.top-content-en button {
+    border: none;
+    border-radius: 20px;
+    background: #02bfa4;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 28px;
+    margin: 10px 12px;
+    cursor: pointer;
+}
+
+.top-content-en button:focus {
+    outline: none;
+}
+
+.mid-content-en {
+    background: #fff;
+    text-align: center;
+    padding: 20px 26px;
+    margin: 20px 0px;
+}
+
+.low-content-en {
+    background: #343a40;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    padding: 40px 26px;
+}
+
+.low-content-en h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.low-content-en p {
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    font-size: 1em;
+}
+
+@media (max-width: 600px) {
+    
+    .top-content-en h1 {
+        font-size: 32px;
+    }
+
+}

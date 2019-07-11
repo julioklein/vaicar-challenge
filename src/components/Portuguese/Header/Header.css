@@ -1,0 +1,13 @@
+.header {
+    background: #fff;
+    padding: 12px 26px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e5e8eb;
+}
+
+.header .logo {
+    width: 100px;
+}
