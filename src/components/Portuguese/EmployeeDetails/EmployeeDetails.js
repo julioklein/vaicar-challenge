@@ -19,6 +19,12 @@ class EmployeeDetails extends Component {
     }
 
     updateField = input => e => {
+        if (input === "phone" || input === "cell") {
+            this.setState({
+                [input]: e.target.value.replace(/\D/g, '')
+            })
+            return
+        }
         this.setState({
             [input]: e.target.value
         })
@@ -26,6 +32,32 @@ class EmployeeDetails extends Component {
 
     updateObjectField = input => e => {
         e.preventDefault()
+        if (input === "date") {
+            let value = e.target.value
+            let eName = e.target.name
+            this.setState(prevState => ({
+                [eName]: {
+                    ...prevState[eName],
+                    [input]: value.replace(/\D/g, '')
+                        .replace(/(\d{2})(\d{2})(\d{4})/, '$1/$2/$3')
+                        .replace(/(\/\d{4})\d+?$/, '$1')
+                }
+            }))
+            return
+        }
+
+        if (input === "postcode") {
+            let value = e.target.value
+            let eName = e.target.name
+            this.setState(prevState => ({
+                [eName]: {
+                    ...prevState[eName],
+                    [input]: value.replace(/\D/g, '')
+                }
+            }))
+            return
+        }
+
         let value = e.target.value
         let eName = e.target.name
         this.setState(prevState => ({
