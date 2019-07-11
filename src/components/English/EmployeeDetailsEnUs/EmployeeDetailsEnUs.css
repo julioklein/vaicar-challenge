@@ -1,3 +1,13 @@
+.edit-fail-en {
+    width: 90%;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f54242;
+    color: #fff;
+}
+
 .edit-en {
     padding: 20px 0px;
 }

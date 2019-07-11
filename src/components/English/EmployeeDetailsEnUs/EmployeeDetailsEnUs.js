@@ -4,7 +4,7 @@ import { Grid } from '@material-ui/core';
 
 class EmployeeDetailsEnUs extends Component {
 
-    state = { ...this.props.employee }
+    state = { ...this.props.employee, editFail: false }
 
     componentWillMount() {
         localStorage.removeItem("backupInfo")
@@ -70,11 +70,41 @@ class EmployeeDetailsEnUs extends Component {
 
     save = e => {
         e.preventDefault()
+
+        if ((
+            this.state.name.first &&
+            this.state.name.last &&
+            this.state.gender &&
+            this.state.location.city &&
+            this.state.location.state &&
+            this.state.location.street &&
+            this.state.location.postcode &&
+            this.state.email &&
+            this.state.dob.date &&
+            this.state.dob.age &&
+            this.state.registered.date &&
+            this.state.phone &&
+            this.state.cell
+        ) === '') {
+            this.setState({
+                editFail: true
+            }, () => {
+                setTimeout(() => {
+                    this.setState({
+                        editFail: false
+                    })
+                }, 1500)
+            })
+            return false
+        }
+
         const user = this.state
         this.props.save(user, true)
     }
 
     render() {
+        let { editFail } = this.state
+
         return (
             <Grid container justify="center">
                 <Grid item container xs={12} sm={8} justify="center" className="edit-en">
@@ -235,6 +265,14 @@ class EmployeeDetailsEnUs extends Component {
                             onChange={this.updateObjectField('date')}
                             placeholder="Ex: 01/01/2019" />
                     </Grid>
+
+                    {
+                        editFail
+                        &&
+                        <div className="edit-fail-en">
+                            <p>Complete all fields.</p>
+                        </div>
+                    }
 
                     <Grid item container xs={12} sm={10} justify="space-around">
                         <Grid item>

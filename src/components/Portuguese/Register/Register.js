@@ -29,7 +29,8 @@ class Register extends Component {
         picture: {
             thumbnail: "https://randomuser.me/api/portraits/thumb/men/3.jpg",
             large: "https://randomuser.me/api/portraits/men/3.jpg"
-        }
+        },
+        registerFail: false
     }
 
     clear() {
@@ -88,11 +89,41 @@ class Register extends Component {
 
     save = e => {
         e.preventDefault()
+
+        if ((
+            this.state.name.first &&
+            this.state.name.last &&
+            this.state.gender &&
+            this.state.location.city &&
+            this.state.location.state &&
+            this.state.location.street &&
+            this.state.location.postcode &&
+            this.state.email &&
+            this.state.dob.date &&
+            this.state.dob.age &&
+            this.state.registered.date &&
+            this.state.phone &&
+            this.state.cell
+        ) === '') {
+            this.setState({
+                registerFail: true
+            }, () => {
+                setTimeout(() => {
+                    this.setState({
+                        registerFail: false
+                    })
+                }, 1500)
+            })
+            return false
+        }
+
         const employee = this.state
         this.props.save(employee)
     }
 
     render() {
+        let { registerFail } = this.state
+
         return (
             <Grid container justify="center">
                 <Grid item container xs={12} sm={8} justify="center" className="register">
@@ -249,6 +280,14 @@ class Register extends Component {
                             onChange={this.updateObjectField('date')}
                             placeholder="Ex: 01/01/2019" />
                     </Grid>
+
+                    {
+                        registerFail
+                        &&
+                        <div className="register-fail">
+                            <p>Preencha todos os campos.</p>
+                        </div>
+                    }
 
                     <Grid item container xs={12} sm={10} justify="space-around">
                         <Grid item>
