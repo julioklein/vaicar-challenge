@@ -1,68 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## VAI Frontend UI Developer Challenge
 
-## Available Scripts
+Para ver a aplicação funcionando, basta acessar [vaicar-challenge.herokuapp.com](https://vaicar-challenge.herokuapp.com).
 
-In the project directory, you can run:
+Ou se quiser testar localmente, clone o repositório e então rode `npm install` ou `yarn install` e em seguida `npm start` ou `yarn start`.
 
-### `npm start`
+### Tecnologias utilizadas
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- react
+- react-dom
+- react-router & react-router-dom
+- react-loadable
+- react-modal
+- axios
+- material-ui
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### Requirements Implementados
 
-### `npm test`
+Create a List and Detail View for a set of Users Profiles, use this [API resource](https://randomuser.me/documentation) to generate and fetch mock data for users. 
+  
+- [x] it should use React or React Native
+- [x] it should display a language picker and change the language as documented on [Random Users Nationalities](https://randomuser.me/documentation#nationalities). This will translate the users' information.
+- [x] it should have private(s) and public(s) page(s)/screen(s)
+- [x] A login page to give access to restricted area 
+- [x] If the user is logged in, the home page should display the dashboard (list view of user profiles) 
+- [x] it should display a list of users as documented at https://randomuser.me/documentation#pagination
+- [x] it should display each item as a card with basic information
+- [x] when I click on a card, it should navigate to the user details and show all the information in the API response.
+- [x] it should allow you to edit the user's information
+- [x] it should allow you to delete a user
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Bonus points
+- [x] Implement code splitting using react-loadable
+- [ ] Use [storybook](https://github.com/storybooks/storybook) to develop your components
+- [ ] Test your components with Jest.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* How did you decide which technologies to use as part of your solution?
+  R. Procurei utilizar as tecnologias que mais faziam sentido na maneira como eu decidi desenvolver a aplicação.
+  
+* Are there any improvements you could make to your submission?
+  R. Sim, um melhor design das páginas de cadastro e edição, um melhor alinhamento dos botões de paginação, melhorias na usabilidade.
+  
+* What would you do differently if you were allocated more time?
+  R. Além das melhorias citadas acima, um estudo mais aprofundado para desenvolver as duas features bonus restantes. Também uma escolha mais detalhada das tecnologias usadas, com esse tempo eu me guiei com base no que já conheço e no que conseguiria aprender durante o desenvolvimento.
